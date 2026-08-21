@@ -8,7 +8,7 @@ int main(int argc, char * argv[]){
         fprintf(2, "Usage: sleep int...\n");
         exit(1);
     }
-
+    
     pause(atoi(argv[1]));
     exit(0);
 }
