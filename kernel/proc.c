@@ -291,6 +291,9 @@ kfork(void)
 
   pid = np->pid;
 
+  // copy trace mask
+  np->trace_mask = p->trace_mask;
+
   release(&np->lock);
 
   acquire(&wait_lock);
